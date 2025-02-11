@@ -185,10 +185,10 @@ ggplot(data = rcbd_layout, aes(x = row,
             show.legend = F
   )+
   scale_fill_viridis_d()+
-  geom_text(aes(label = plot), fontface = "bold", vjust = -.8)+
+  geom_text(aes(label = plot), fontface = "bold", vjust = -.3)+
   geom_text(aes(label = trtname), vjust = 1)+
   labs(title = "RCBD randomization of a 3 x 3 factorial (9 treatments)") +
-  theme_void() +
+  theme_void()+
   theme(plot.title = element_text(hjust = 0.5))
 
 ```
